@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts_translations', function (Blueprint $table) {
+        Schema::create('post_translations', function (Blueprint $table) {
           $table->increments('id');
           $table->integer('post_id')->unsigned();
           $table->string('locale')->index();
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts_translations');
+        Schema::dropIfExists('post_translations');
     }
 };
