@@ -9,6 +9,5 @@ use Astrotomic\Translatable\Translatable;
 
 class Category extends Model implements TranslatableContract
 {
-    use Translatable;
-    use HasFactory;
+    use HasFactory, Translatable;
 }
