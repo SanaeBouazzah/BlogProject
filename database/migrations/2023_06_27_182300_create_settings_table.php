@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('logo')->nullable();
             $table->string('favicon')->nullable();
             $table->string('facebook')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
