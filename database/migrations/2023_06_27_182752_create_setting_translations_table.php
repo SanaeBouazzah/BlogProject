@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('setting_translations', function (Blueprint $table) {
           $table->id();
-          $table->integer('setting_id')->unsigned();
+          $table->unsignedBigInteger('setting_id');
           $table->string('locale')->index();
           $table->string('title')->nullable();
           $table->text('content')->nullable();
