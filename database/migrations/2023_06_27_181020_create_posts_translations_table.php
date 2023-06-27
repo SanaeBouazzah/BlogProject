@@ -12,8 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('posts_translations', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+          $table->increments('id');
+          $table->integer('post_id')->unsigned();
+          $table->string('locale')->index();
+          $table->string('title');
+          $table->text('content');
+          $table->text('smallDesc');
+          $table->unique(['post_id', 'locale']);
+          $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
         });
     }
 
