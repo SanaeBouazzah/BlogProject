@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('logo')->nullable();
             $table->string('favicon')->nullable();
+            $table->string('facebook')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
