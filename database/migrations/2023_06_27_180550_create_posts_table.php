@@ -12,8 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+          $table->increments('id');
+          $table->integer('user_id')->nullable();
+          $table->timestamps();
+          $table->softDeletes();
         });
     }
 
