@@ -17,7 +17,7 @@ return new class extends Migration
           $table->string('locale')->index();
           $table->string('title')->nullable();
           $table->text('content')->nullable();
-          $table->text('addess')->nullable();
+          $table->text('address')->nullable();
           $table->unique(['setting_id', 'locale']);
           $table->foreign('setting_id')->references('id')->on('settings')->onDelete('cascade');
         });
