@@ -10,4 +10,6 @@ use Astrotomic\Translatable\Translatable;
 class Category extends Model implements TranslatableContract
 {
     use HasFactory, Translatable;
+    public $translatedAttributes = ['title', 'content', 'address'];
+    protected $fillable = ['image', 'parent', 'title', 'content'];
 }
