@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
           $table->id();
-          $table->integer('user_id')->nullable();
           $table->string('image')->nullable();
+          $table->unsignedBigInteger('category_id');
           $table->timestamps();
           $table->softDeletes();
         });
