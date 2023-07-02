@@ -1,2 +1,5 @@
 @extends('dashboard.layouts.layout')
-@extends('yeild')
+
+@section('body')
+    
+@endsection
