@@ -80,7 +80,7 @@
          </div>
      </header>
     
-     @include('sidebar')
+     @include('dashboard.layouts.sidebar')
      <!-- Main content -->
      <main class="main">
       @yield('body')
