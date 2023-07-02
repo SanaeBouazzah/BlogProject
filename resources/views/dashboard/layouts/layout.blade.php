@@ -577,7 +577,7 @@
          </span>
      </footer>
      <!-- Bootstrap and necessary plugins -->
-     <script src="js/libs/jquery.min.js"></script>
+     <script src="{{asset('adminassets/js/libs/jquery.min.js')}}"></script>
      <script src="js/libs/tether.min.js"></script>
      <script src="js/libs/bootstrap.min.js"></script>
      <script src="js/libs/pace.min.js"></script>
