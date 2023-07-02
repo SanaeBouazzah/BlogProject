@@ -8,4 +8,4 @@ Route::get('/', function () {
 });
 Route::get('/settings', function () {
     return view('dashboard.settings');
-});
+})->name('dashboard.settings');
