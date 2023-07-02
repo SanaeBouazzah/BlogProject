@@ -587,11 +587,11 @@
  
      <!-- CoreUI main scripts -->
  
-     <script src="js/app.js"></script>
+     <script src="{{asset('adminassets/js/libs/Chart.min.js')}}js/app.js"></script>
  
      <!-- Plugins and scripts required by this views -->
      <!-- Custom scripts required by this view -->
-     <script src="js/views/main.js"></script>
+     <script src="{{asset('adminassets/js/libs/Chart.min.js')}}js/views/main.js"></script>
  
      <!-- Grunt watch plugin -->
      <script src="//localhost:35729/livereload.js"></script>
