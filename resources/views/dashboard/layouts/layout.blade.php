@@ -18,7 +18,7 @@
      <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
      <title>CoreUI Bootstrap 4 Admin Template</title>
      <!-- Icons -->
-     <link href="css/font-awesome.min.css" rel="stylesheet">
+     <link href="{{asset('adminassets/css/font-awesome.min.css')}}" rel="stylesheet">
      <link href="css/simple-line-icons.css" rel="stylesheet">
      <!-- Main styles for this application -->
      <link href="dest/style.css" rel="stylesheet">
