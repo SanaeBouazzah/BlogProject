@@ -591,7 +591,7 @@
  
      <!-- Plugins and scripts required by this views -->
      <!-- Custom scripts required by this view -->
-     <script src="{{asset('adminassets/js/libs/Chart.min.js')}}js/views/main.js"></script>
+     <script src="{{asset('adminassets/js/views/main.js')}}"></script>
  
      <!-- Grunt watch plugin -->
      <script src="//localhost:35729/livereload.js"></script>
