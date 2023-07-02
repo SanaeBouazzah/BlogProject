@@ -80,6 +80,7 @@
          </div>
      </header>
     
+     @include('sidebar')
      <!-- Main content -->
      <main class="main">
       @yield('body')
