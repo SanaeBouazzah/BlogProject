@@ -6,6 +6,6 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <h2>laravel</h2>
 </body>
 </html>
