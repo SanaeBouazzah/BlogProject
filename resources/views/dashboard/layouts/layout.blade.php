@@ -578,9 +578,9 @@
      </footer>
      <!-- Bootstrap and necessary plugins -->
      <script src="{{asset('adminassets/js/libs/jquery.min.js')}}"></script>
-     <script src="js/libs/tether.min.js"></script>
-     <script src="js/libs/bootstrap.min.js"></script>
-     <script src="js/libs/pace.min.js"></script>
+     <script src="{{asset('adminassets/js/libs/jquery.min.js')}}js/libs/tether.min.js"></script>
+     <script src="{{asset('adminassets/js/libs/jquery.min.js')}}js/libs/bootstrap.min.js"></script>
+     <script src="{{asset('adminassets/js/libs/jquery.min.js')}}js/libs/pace.min.js"></script>
  
      <!-- Plugins and scripts required by all views -->
      <script src="js/libs/Chart.min.js"></script>
