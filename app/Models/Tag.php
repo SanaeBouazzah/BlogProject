@@ -11,5 +11,5 @@ class Category extends Model implements TranslatableContract
 {
     use HasFactory, Translatable;
     public $translatedAttributes = ['title'];
-    protected $fillable = ['image', 'parent'];
+    protected $fillable = ['created_at', 'updated_at', 'deleted_at'];
 }
