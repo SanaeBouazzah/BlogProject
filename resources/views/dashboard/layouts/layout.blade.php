@@ -583,7 +583,7 @@
      <script src="{{asset('adminassets/js/libs/pace.min.js')}}"></script>
  
      <!-- Plugins and scripts required by all views -->
-     <script src="js/libs/Chart.min.js"></script>
+     <script src="{{asset('adminassets/js/libs/Chart.min.js')}}"></script>
  
      <!-- CoreUI main scripts -->
  
