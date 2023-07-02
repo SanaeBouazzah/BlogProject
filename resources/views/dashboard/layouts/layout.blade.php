@@ -587,7 +587,7 @@
  
      <!-- CoreUI main scripts -->
  
-     <script src="{{asset('adminassets/js/libs/Chart.min.js')}}js/app.js"></script>
+     <script src="{{asset('adminassets/js/app.js')}}"></script>
  
      <!-- Plugins and scripts required by this views -->
      <!-- Custom scripts required by this view -->
