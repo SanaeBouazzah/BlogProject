@@ -14,5 +14,6 @@ return [
     */
 
     'dashboard' => 'لوحة القيادة',
+    'settings' => '',
 
 ];
