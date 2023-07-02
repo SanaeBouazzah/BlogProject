@@ -13,4 +13,6 @@ return [
     |
     */
 
-    'accepted' => 'The :attribute field must be accepted.',
+    'dashboard' => 'لوحة القيادة',
+
+]
