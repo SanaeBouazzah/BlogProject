@@ -184,6 +184,7 @@
      </div>
      <!-- Main content -->
      <main class="main">
+      @yield('body')
      </main>
  
      <aside class="aside-menu">
