@@ -13,6 +13,6 @@ return [
     |
     */
 
-    'dashboard' => 'لوحة القيادة',
+    'dashboard' => 'Dashboard',
 
 ];
