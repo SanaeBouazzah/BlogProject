@@ -71,6 +71,10 @@
               <label>{{ trans('words.content') }}</label>
               <textarea name="content" id="content" cols="30" rows="10" class="form-control"></textarea>
             </div>
+            <div class="form-group col-md-12">
+              <label>{{ trans('words.address') }}</label>
+              <textarea name="address" id="address" cols="30" rows="10" class="form-control"></textarea>
+            </div>
           </div>
           @endforeach
         </div>
