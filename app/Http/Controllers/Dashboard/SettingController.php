@@ -7,17 +7,10 @@ use Illuminate\Http\Request;
 
 class SettingController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        return view('dashboard.settings');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         //
