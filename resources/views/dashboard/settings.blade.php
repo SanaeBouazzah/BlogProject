@@ -10,13 +10,13 @@
 </nav>
 <div class="container-fluid">
    <div class="row">
+    <form action="" method="post">
+      @csrf
     <div class="card">
       <div class="card-header">
         <strong>{{ trans('words.settings') }}</strong>
       </div>
       <div class="card-block">
-        <form action="" method="post">
-          @csrf
           <div class="form-group col-md-6">
             <label for="logo">{{ trans('words.logo') }}</label>
             <input type="file" placeholder="{{ trans('words.logo') }}"  id="logo" name="logo" class="form-control">
@@ -41,7 +41,6 @@
             <label for="email">{{ trans('words.email') }}</label>
             <input type="text" placeholder="{{ trans('words.email') }}" id="email" name="email" class="form-control">
           </div>
-        </form>
       </div>
     </div>
 
@@ -54,7 +53,7 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           @foreach (config('app.languages') as $key => $lang)
           <li class="nav-item" role="presentation">
-            <a class="nav-link @if($loop->index == 1) active @endif" id="home-tab" data-bs-toggle="tab" href="{{$key}}"
+            <a class="nav-link @if($loop->index == 0) active @endif" id="{{$key}}" data-bs-toggle="tab" href="{{$key}}"
             data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" 
             aria-selected="true">  {{$lang}}</a>
           </li>
@@ -64,7 +63,7 @@
           @foreach (config('app.languages') as $key => $lang)
           <div class="tab-pane fade @if($loop->index == 0) show active in @endif" id="{{$key}}" role="tabpanel" aria-labelledby="home-tab">
             <div class="form-group mt-2 col-md-12">
-              <label>{{ trans('words.title') }} hell</label>
+              <label>{{ trans('words.title') }}</label>
               <input type="text" name="title" id="title" class="form-control" placeholder="{{ trans('words.title') }}">
             </div>
             <div class="form-group col-md-12">
@@ -80,9 +79,17 @@
         </div>
       </div>
     </div>
-   </div>
-   <div class="row">
-    hello
+
+
+    <div class="card-footerBlo">
+      <button type="submit" class="btn p-5  btn-primary"><i class="fa fa-dot-circle-o"></i>
+          Submit</button>
+      <button type="reset" class="btn p-5 btn-danger"><i class="fa fa-ban"></i>
+          Reset</button>
+  </div>
+
+  </form>
+
    </div>
 </div>
     
