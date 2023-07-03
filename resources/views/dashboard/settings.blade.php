@@ -5,11 +5,11 @@
       @csrf
       <div>
         <label for="">logo</label>
-        <input type="text" placeholder="logo">
+        <input type="file" placeholder="logo" id="">
       </div>
       <div>
         <label for="">favicon</label>
-        <input type="text" placeholder="favicon">
+        <input type="file" placeholder="favicon" >
       </div>
       <div>
         <label for="">facebook</label>
