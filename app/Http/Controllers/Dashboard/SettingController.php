@@ -9,7 +9,7 @@ class SettingController extends Controller
 {
     public function index()
     {
-        return view('settings.index');
+        return view('dashboard.settings.index');
     }
     public function create()
     {
