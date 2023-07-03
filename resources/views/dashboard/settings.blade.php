@@ -10,7 +10,7 @@
 </nav>
 <div class="container-fluid">
    <div class="row">
-    <form action="" method="post">
+    <form action="{{route('dashboard.settings.update')}}" method="post">
       @csrf
     <div class="card">
       <div class="card-header">
@@ -81,7 +81,7 @@
     </div>
 
 
-    <div class="card-footerBlo">
+    <div class="card-footer">
       <button type="submit" class="btn p-5  btn-primary"><i class="fa fa-dot-circle-o"></i>
           Submit</button>
       <button type="reset" class="btn p-5 btn-danger"><i class="fa fa-ban"></i>
