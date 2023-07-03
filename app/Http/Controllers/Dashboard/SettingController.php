@@ -45,7 +45,7 @@ class SettingController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+      echo 'Hey';
     }
 
     /**
