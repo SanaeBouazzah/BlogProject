@@ -44,6 +44,13 @@
         </form>
       </div>
     </div>
+
+
+    <div class="card">
+      <div class="card-header">
+        <strong>{{ trans('words.translations') }}</strong>
+      </div>
+    </div>
    </div>
    <div class="row">
     hello
