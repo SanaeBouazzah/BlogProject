@@ -10,33 +10,40 @@
 </nav>
 <div class="container-fluid">
    <div class="row">
-    <form action="">
-      @csrf
-      <div>
-        <label for="">logo</label>
-        <input type="file" placeholder="logo" id="" class="form-control">
+    <div class="card">
+      <div class="card-header">
+        <strong>Form</strong>
       </div>
-      <div>
-        <label for="">favicon</label>
-        <input type="file" placeholder="favicon" class="form-control">
+      <div class="card-block">
+        <form action="">
+          @csrf
+          <div>
+            <label for="">logo</label>
+            <input type="file" placeholder="logo" id="" class="form-control">
+          </div>
+          <div>
+            <label for="">favicon</label>
+            <input type="file" placeholder="favicon" class="form-control">
+          </div>
+          <div>
+            <label for="">facebook</label>
+            <input type="text" placeholder="facebook" class="form-control">
+          </div>
+          <div>
+            <label for="">instagram</label>
+            <input type="text" placeholder="instagram" class="form-control">
+          </div>
+          <div>
+            <label for="">phone</label>
+            <input type="text" placeholder="phone" class="form-control">
+          </div>
+          <div>
+            <label for="">email</label>
+            <input type="text" placeholder="email" class="form-control">
+          </div>
+        </form>
       </div>
-      <div>
-        <label for="">facebook</label>
-        <input type="text" placeholder="facebook" class="form-control">
-      </div>
-      <div>
-        <label for="">instagram</label>
-        <input type="text" placeholder="instagram" class="form-control">
-      </div>
-      <div>
-        <label for="">phone</label>
-        <input type="text" placeholder="phone" class="form-control">
-      </div>
-      <div>
-        <label for="">email</label>
-        <input type="text" placeholder="email" class="form-control">
-      </div>
-    </form>
+    </div>
    </div>
    <div class="row">
     hello
