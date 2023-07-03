@@ -5,9 +5,11 @@
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#"></a></li>
-    <li class="breadcrumb-item active" aria-current="page"></li>
+    <li class="breadcrumb-item active" aria-current="page">Settings</li>
   </ol>
 </nav>
+<div class="container-fluid">
+   <div class="row">
     <form action="">
       @csrf
       <div>
@@ -35,6 +37,12 @@
         <input type="text" placeholder="email" class="form-control">
       </div>
     </form>
+   </div>
+   <div class="row">
+    hello
+   </div>
+</div>
+    
 
 
 @endsection
