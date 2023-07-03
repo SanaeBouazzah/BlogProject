@@ -56,20 +56,23 @@
           <li class="nav-item" role="presentation">
             <a class="nav-link @if($loop->index == 1) active @endif" id="home-tab" data-bs-toggle="tab" href="{{$key}}"
             data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" 
-            aria-selected="true">  {{print_r($key)}}</a>
+            aria-selected="true">  {{$lang}}</a>
           </li>
         @endforeach
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          @foreach (config('app.languages') as $key => $lang)
+          <div class="tab-pane fade show active" id="{{$key}}" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <div class="form-group mt-2 col-md-12">
-              <label>{{ trans('words.email') }} hell</label>
-              <input type="text" name="email" id="email" class="form-control" placeholder="{{ trans('words.email') }}">
+              <label>{{ trans('words.title') }} hell</label>
+              <input type="text" name="title" id="title" class="form-control" placeholder="{{ trans('words.title') }}">
+            </div>
+            <div class="form-group col-md-12">
+              <label>{{ trans('words.content') }}</label>
+              <textarea name="content" id="content" cols="30" rows="10" class="form-control"></textarea>
             </div>
           </div>
-          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-          <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+          @endforeach
         </div>
       </div>
     </div>
