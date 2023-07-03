@@ -63,16 +63,16 @@
           @foreach (config('app.languages') as $key => $lang)
           <div class="tab-pane fade @if($loop->index == 0) show active in @endif" id="{{$key}}" role="tabpanel" aria-labelledby="home-tab">
             <div class="form-group mt-2 col-md-12">
-              <label>{{ trans('words.title') }}</label>
-              <input type="text" name="title" id="title" class="form-control" placeholder="{{ trans('words.title') }}">
+              <label>{{ trans('words.title') }} - {{$lang}}</label>
+              <input type="text" name="{{$key['title']}}" id="title" class="form-control" placeholder="{{ trans('words.title') }}">
             </div>
             <div class="form-group col-md-12">
               <label>{{ trans('words.content') }}</label>
-              <textarea name="content" id="content" cols="30" rows="10" class="form-control"></textarea>
+              <textarea name="{{$key['content']}}" id="content" cols="30" rows="10" class="form-control"></textarea>
             </div>
             <div class="form-group col-md-12">
               <label>{{ trans('words.address') }}</label>
-              <textarea name="address" id="address" cols="30" rows="10" class="form-control"></textarea>
+              <textarea name="{{$key['address']}}" id="address" cols="30" rows="10" class="form-control"></textarea>
             </div>
           </div>
           @endforeach
