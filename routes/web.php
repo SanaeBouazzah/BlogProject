@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('dashboard.settings');
+    return view('dashboard.index');
 })->name('dashboard.index');
 
 
