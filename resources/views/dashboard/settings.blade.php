@@ -62,7 +62,7 @@
         </ul>
         <div class="tab-content" id="myTabContent">
           @foreach (config('app.languages') as $key => $lang)
-          <div class="tab-pane fade show active" id="{{$key}}" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="tab-pane fade @if($loop->index == 0) show active in @endif" id="{{$key}}" role="tabpanel" aria-labelledby="home-tab">
             <div class="form-group mt-2 col-md-12">
               <label>{{ trans('words.title') }} hell</label>
               <input type="text" name="title" id="title" class="form-control" placeholder="{{ trans('words.title') }}">
