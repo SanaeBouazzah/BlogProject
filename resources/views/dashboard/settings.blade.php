@@ -28,4 +28,6 @@
         <input type="text" placeholder="email">
       </div>
     </form>
+
+    
 @endsection
