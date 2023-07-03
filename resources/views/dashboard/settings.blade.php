@@ -26,12 +26,12 @@
             <input type="file" placeholder="{{ trans('words.favicon') }}" id="favicon" name="favicon" class="form-control">
           </div>
           <div class="form-group col-md-6">
-            <label for="">facebook</label>
-            <input type="text" placeholder="facebook" class="form-control">
+            <label for="facebook">{{ trans('words.facebook') }}</label>
+            <input type="text" placeholder="{{ trans('words.facebook') }}" id="facebook" name="facebook" class="form-control">
           </div>
           <div class="form-group col-md-6">
-            <label for="">instagram</label>
-            <input type="text" placeholder="instagram" class="form-control">
+            <label for="instagram">{{ trans('words.instagram') }}</label>
+            <input type="text" placeholder="{{ trans('words.instagram') }}" id="instagram" name="instagram" class="form-control">
           </div>
           <div class="form-group col-md-6">
             <label for="">phone</label>
