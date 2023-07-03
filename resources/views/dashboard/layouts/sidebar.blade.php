@@ -25,7 +25,7 @@
              گزارش گیری
           </li>
            <li class="nav-item">
-              <a class="nav-link" href="{{route('settings')}}"><i class="icon-people"></i>{{ trans('words.settings') }}</a>
+              <a class="nav-link" href="{{route('settings.index')}}"><i class="icon-people"></i>{{ trans('words.settings') }}</a>
               <a class="nav-link" href="#"><i class="icon-docs"></i>  فایل ها</a>
           </li>
           <!--<li class="nav-item nav-dropdown">
