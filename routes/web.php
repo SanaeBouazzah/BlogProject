@@ -6,7 +6,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('dashboard.settings');
-})->name('dashboard.settings');
+})->name('dashboard.index');
+
+
 Route::resource('/settings', SettingController::class);
 
 // Route::post('/settings', function(){
