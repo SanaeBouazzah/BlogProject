@@ -16,6 +16,6 @@ class Setting extends Model implements TranslatableContract
 
    public static function chhecksettings()
    {
-
+      $setting =Self::alll();
    }
 }
