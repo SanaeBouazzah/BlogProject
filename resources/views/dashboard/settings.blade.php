@@ -52,24 +52,21 @@
       </div>
       <div class="card-block">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-          @foreach (config('app.languages') as $lang)
-              
-          @endforeach
+          @foreach (config('app.languages') as $key => $lang)
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            <a class="nav-link @if($loop->index == 1) active @endif" id="home-tab" data-bs-toggle="tab" href="{{$key}}"
+            data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" 
+            aria-selected="true">  {{print_r($key)}}</a>
           </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
-          </li>
+        @endforeach
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="form-group mt-2 col-md-12">
+              <label>{{ trans('words.email') }} hell</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="{{ trans('words.email') }}">
+            </div>
+          </div>
           <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
           <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
