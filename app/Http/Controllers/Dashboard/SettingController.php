@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Dashboard;
 
+use App\Models\Setting;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Setting;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class SettingController extends Controller
 {
@@ -23,7 +25,7 @@ class SettingController extends Controller
       //   'email' => 'required',
       // ]);
       Setting::create($request->all());
-      redirect()->route('dashboard.index');
+      return redirect()->route('dashboard.index');
     }
     public function show(string $id)
     {
