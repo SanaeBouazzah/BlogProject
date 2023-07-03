@@ -38,8 +38,8 @@
             <input type="text" placeholder="{{ trans('words.phone') }}" id="phone" name="phone" class="form-control">
           </div>
           <div class="form-group col-md-6">
-            <label for="">email</label>
-            <input type="text" placeholder="email" class="form-control">
+            <label for="email">{{ trans('words.email') }}</label>
+            <input type="text" placeholder="{{ trans('words.email') }}" id="email" name="email" class="form-control">
           </div>
         </form>
       </div>
