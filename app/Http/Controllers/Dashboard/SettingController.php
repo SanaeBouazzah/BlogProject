@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Setting;
 
 class SettingController extends Controller
 {
@@ -13,7 +14,16 @@ class SettingController extends Controller
     }
     public function store(Request $request)
     {
-      dd($request->all());
+      // $data = $request-Validate([
+      //   'logo' => 'required',
+      //   'favicon' => 'required',
+      //   'instagram' => 'required',
+      //   'facebook' => 'required',
+      //   'phone' => 'required',
+      //   'email' => 'required',
+      // ]);
+      Setting::create($request->all());
+      redirect()->route('dashboard.index');
     }
     public function show(string $id)
     {
