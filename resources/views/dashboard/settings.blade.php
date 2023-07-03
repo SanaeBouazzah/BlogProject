@@ -22,8 +22,8 @@
             <input type="file" placeholder="{{ trans('words.logo') }}"  id="logo" name="logo" class="form-control">
           </div>
           <div class="form-group col-md-6">
-            <label for="">favicon</label>
-            <input type="file" placeholder="favicon" class="form-control">
+            <label for="favicon">{{ trans('words.favicon') }}</label>
+            <input type="file" placeholder="{{ trans('words.favicon') }}" id="favicon" name="favicon" class="form-control">
           </div>
           <div class="form-group col-md-6">
             <label for="">facebook</label>
