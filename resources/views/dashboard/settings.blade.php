@@ -18,7 +18,7 @@
         <form action="" method="post">
           @csrf
           <div class="form-group col-md-6">
-            <label for="">logo</label>
+            <label for="">{{ trans('words.logo') }}</label>
             <input type="file" placeholder="logo" id="" class="form-control">
           </div>
           <div class="form-group col-md-6">
