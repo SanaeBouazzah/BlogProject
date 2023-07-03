@@ -34,8 +34,8 @@
             <input type="text" placeholder="{{ trans('words.instagram') }}" id="instagram" name="instagram" class="form-control">
           </div>
           <div class="form-group col-md-6">
-            <label for="">phone</label>
-            <input type="text" placeholder="phone" class="form-control">
+            <label for="phone">{{ trans('words.phone') }}</label>
+            <input type="text" placeholder="{{ trans('words.phone') }}" id="phone" name="phone" class="form-control">
           </div>
           <div class="form-group col-md-6">
             <label for="">email</label>
