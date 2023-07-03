@@ -52,6 +52,9 @@
       </div>
       <div class="card-block">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
+          @foreach (config('app.languages') as $lang)
+              
+          @endforeach
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
           </li>
