@@ -50,10 +50,10 @@
         <strong>{{ trans('words.translations') }}</strong>
       </div>
       <div class="card-block">
-        <ul class="nav nav-tabs" id="myTabContent" role="tablist">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
           @foreach (config('app.languages') as $key => $lang)
           <li class="nav-item" role="presentation">
-            <a class="nav-link @if($loop->index == 0) active @endif" id="{{$key}}" data-bs-toggle="tab" href="{{$key}}"
+            <a class="nav-link @if($loop->index == 0) active @endif" id="{{$key}}" data-bs-toggle="tab" href="#{{$key}}"
             data-bs-target="{{$key}}" role="tab" aria-controls="{{$key}}" 
             aria-selected="true">  {{$lang}}</a>
           </li>
