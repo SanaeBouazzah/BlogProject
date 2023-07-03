@@ -15,6 +15,17 @@
         <label for="">facebook</label>
         <input type="text" placeholder="facebook">
       </div>
-    BlogP
+      <div>
+        <label for="">instagram</label>
+        <input type="text" placeholder="instagram">
+      </div>
+      <div>
+        <label for="">phone</label>
+        <input type="text" placeholder="phone">
+      </div>
+      <div>
+        <label for="">email</label>
+        <input type="text" placeholder="email">
+      </div>
     </form>
 @endsection
