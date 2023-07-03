@@ -50,29 +50,29 @@
         <strong>{{ trans('words.translations') }}</strong>
       </div>
       <div class="card-block">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <ul class="nav nav-tabs" id="myTabContent" role="tablist">
           @foreach (config('app.languages') as $key => $lang)
           <li class="nav-item" role="presentation">
             <a class="nav-link @if($loop->index == 0) active @endif" id="{{$key}}" data-bs-toggle="tab" href="{{$key}}"
-            data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" 
+            data-bs-target="{{$key}}" role="tab" aria-controls="{{$key}}" 
             aria-selected="true">  {{$lang}}</a>
           </li>
         @endforeach
         </ul>
         <div class="tab-content" id="myTabContent">
           @foreach (config('app.languages') as $key => $lang)
-          <div class="tab-pane fade @if($loop->index == 0) show active in @endif" id="{{$key}}" role="tabpanel" aria-labelledby="home-tab">
+          <div class="tab-pane fade @if($loop->index == 0) show active in @endif" id="{{$key}}" role="tabpanel" aria-labelledby="{{$key}}">
             <div class="form-group mt-2 col-md-12">
               <label>{{ trans('words.title') }} - {{$lang}}</label>
-              <input type="text" name="{{$key['title']}}" id="title" class="form-control" placeholder="{{ trans('words.title') }}">
+              <input type="text" name="{{$key}}['title']" id="title" class="form-control" placeholder="{{ trans('words.title') }}">
             </div>
             <div class="form-group col-md-12">
               <label>{{ trans('words.content') }}</label>
-              <textarea name="{{$key['content']}}" id="content" cols="30" rows="10" class="form-control"></textarea>
+              <textarea name="{{$key}}['content']" id="content" cols="30" rows="10" class="form-control"></textarea>
             </div>
             <div class="form-group col-md-12">
               <label>{{ trans('words.address') }}</label>
-              <textarea name="{{$key['address']}}" id="address" cols="30" rows="10" class="form-control"></textarea>
+              <textarea name="{{$key}}['address']" id="address" cols="30" rows="10" class="form-control"></textarea>
             </div>
           </div>
           @endforeach

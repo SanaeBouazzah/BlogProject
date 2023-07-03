@@ -13,7 +13,7 @@ class SettingController extends Controller
     }
     public function store(Request $request)
     {
-      echo 'Hey';
+      dd($request->all());
     }
     public function show(string $id)
     {
