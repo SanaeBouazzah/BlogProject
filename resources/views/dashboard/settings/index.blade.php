@@ -10,7 +10,7 @@
 </nav>
 <div class="container-fluid">
    <div class="row">
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="{{route('settings.store')}}" method="post" enctype="multipart/form-data">
       @csrf
     <div class="card">
       <div class="card-header">

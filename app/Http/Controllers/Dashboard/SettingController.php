@@ -21,7 +21,7 @@ class SettingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      echo 'Hey';
     }
 
     /**
@@ -45,7 +45,6 @@ class SettingController extends Controller
      */
     public function update()
     {
-      echo 'Hey';
     }
 
     /**
