@@ -9,7 +9,7 @@ class SettingController extends Controller
 {
     public function index()
     {
-        return view('dashboard.settings');
+        return view('settings.index');
     }
     public function create()
     {
@@ -43,7 +43,7 @@ class SettingController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update()
     {
       echo 'Hey';
     }
