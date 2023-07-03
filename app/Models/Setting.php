@@ -14,8 +14,8 @@ class Setting extends Model implements TranslatableContract
     protected $fillable = [ 'logo', 'favicon', 'facebook', 'instagram', 'phone', 'email', 'created_at', 'updated_at', 'deleted_at'];
 
 
-   public static function()
+   public static function chhecksettings()
    {
-    
+
    }
 }
