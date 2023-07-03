@@ -12,7 +12,7 @@
    <div class="row">
     <div class="card">
       <div class="card-header">
-        <strong>Form</strong>
+        <strong>{{ trans('words.settings') }}</strong>
       </div>
       <div class="card-block">
         <form action="" method="post">
