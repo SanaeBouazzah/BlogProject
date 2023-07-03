@@ -5,29 +5,29 @@
       @csrf
       <div>
         <label for="">logo</label>
-        <input type="file" placeholder="logo" id="">
+        <input type="file" placeholder="logo" id="" class="form-control">
       </div>
       <div>
         <label for="">favicon</label>
-        <input type="file" placeholder="favicon" >
+        <input type="file" placeholder="favicon" class="form-control">
       </div>
       <div>
         <label for="">facebook</label>
-        <input type="text" placeholder="facebook">
+        <input type="text" placeholder="facebook" class="form-control">
       </div>
       <div>
         <label for="">instagram</label>
-        <input type="text" placeholder="instagram">
+        <input type="text" placeholder="instagram" class="form-control">
       </div>
       <div>
         <label for="">phone</label>
-        <input type="text" placeholder="phone">
+        <input type="text" placeholder="phone" class="form-control">
       </div>
       <div>
         <label for="">email</label>
-        <input type="text" placeholder="email">
+        <input type="text" placeholder="email" class="form-control">
       </div>
     </form>
 
-    
+
 @endsection
