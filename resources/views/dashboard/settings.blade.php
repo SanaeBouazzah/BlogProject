@@ -18,8 +18,8 @@
         <form action="" method="post">
           @csrf
           <div class="form-group col-md-6">
-            <label for="">{{ trans('words.logo') }}</label>
-            <input type="file" placeholder="logo" id="" class="form-control">
+            <label for="logo">{{ trans('words.logo') }}</label>
+            <input type="file" placeholder="{{ trans('words.logo') }}"  id="logo" name="logo" class="form-control">
           </div>
           <div class="form-group col-md-6">
             <label for="">favicon</label>
