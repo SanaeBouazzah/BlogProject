@@ -18,7 +18,13 @@ class Setting extends Model implements TranslatableContract
    {
       $settings =Self::all();
       if(is_null($settings)){
+        $data = [
+          'id' => 1,
 
+        ];
+        foreach (config('app.languages') as $key => $value) {
+          # code...
+        }
       }
       return Self::first();
    }
