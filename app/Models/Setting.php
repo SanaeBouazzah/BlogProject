@@ -17,7 +17,7 @@ class Setting extends Model implements TranslatableContract
    public static function checkSettings()
    {
       $settings =Self::all();
-      if(is_null($settings)){
+      if(count($settings)<1){
         $data = [
           'id' => 1,
 
