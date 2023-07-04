@@ -23,8 +23,9 @@ class Setting extends Model implements TranslatableContract
 
         ];
         foreach (config('app.languages') as $key => $value) {
-          # code...
+          $data[$key]['title'] = $value;
         }
+        dd($data);
       }
       return Self::first();
    }
