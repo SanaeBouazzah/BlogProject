@@ -8,6 +8,8 @@
     <li class="breadcrumb-item active" aria-current="page">Settings</li>
   </ol>
 </nav>
+
+{{dd($settings)}}
 <div class="container-fluid">
    <div class="row">
     <form action="{{route('settings.store')}}" method="post" enctype="multipart/form-data">
