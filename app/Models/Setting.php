@@ -16,7 +16,10 @@ class Setting extends Model implements TranslatableContract
 
    public static function checkSettings()
    {
-      $setting =Self::all();
-      dd($setting);
+      $settings =Self::all();
+      if(is_null($settings)){
+
+      }
+      return Self::first();
    }
 }
