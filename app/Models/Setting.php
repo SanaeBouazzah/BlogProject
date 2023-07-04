@@ -20,7 +20,6 @@ class Setting extends Model implements TranslatableContract
       if(count($settings)<1){
         $data = [
           'id' => 1,
-
         ];
         foreach (config('app.languages') as $key => $value) {
           $data[$key]['title'] = $value;
