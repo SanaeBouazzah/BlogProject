@@ -16,14 +16,6 @@ class SettingController extends Controller
     }
     public function store(Request $request)
     {
-      // $data = $request-Validate([
-      //   'logo' => 'required',
-      //   'favicon' => 'required',
-      //   'instagram' => 'required',
-      //   'facebook' => 'required',
-      //   'phone' => 'required',
-      //   'email' => 'required',
-      // ]);
       Setting::create($request->all());
       return redirect()->route('dashboard.index');
     }
