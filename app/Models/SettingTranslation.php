@@ -2,12 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Setting;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class SettingTranslation extends Model
 {
     use HasFactory;
     public $timestamps = false;
     protected $fillable = ['setting_id', 'locale', 'title', 'content', 'address'];
+
+
+
+    public function user()
+    {
+        return $this->belongsTo(Setting::class);
+    }
 }
