@@ -13,11 +13,6 @@ class Setting extends Model implements TranslatableContract
     use HasFactory, Translatable;
     public $translatedAttributes = ['title', 'content', 'address'];
     protected $fillable = [ 'logo', 'favicon', 'facebook', 'instagram', 'phone', 'email', 'created_at', 'updated_at', 'deleted_at'];
-
-    public function posts()
-    {
-        return $this->hasMany(SettingTranslation::class);
-    }
    public static function checkSettings()
    {
       $settings =Self::all();

@@ -12,10 +12,4 @@ class SettingTranslation extends Model
     public $timestamps = false;
     protected $fillable = ['setting_id', 'locale', 'title', 'content', 'address'];
 
-
-
-    public function user()
-    {
-        return $this->belongsTo(Setting::class);
-    }
 }
