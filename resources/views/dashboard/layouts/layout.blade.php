@@ -15,6 +15,9 @@
      <link href="{{asset('adminassets/css/simple-line-icons.css')}}" rel="stylesheet">
      <!-- Main styles for this application -->
      <link href="{{asset('adminassets/dest/style.css')}}" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
  </head>
  <!-- BODY options, add following classes to body to change options
      1. 'compact-nav'     	  - Switch sidebar to minified version (width 50px)
