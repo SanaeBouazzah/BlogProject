@@ -82,7 +82,7 @@
                                     @foreach (config('app.languages') as $key => $lang)
                                         <li class="nav-item">
                                             <a class="nav-link @if ($loop->index == 0) active @endif"
-                                                id="home-tab" data-toggle="tab" href="#{{ $key }}" role="tab"
+                                                id="home-tab" data-toggle="tab" href="#{{ $lang }}" role="tab"
                                                 aria-controls="home" aria-selected="true">{{ $lang }}</a>
                                         </li>
                                     @endforeach
@@ -90,8 +90,8 @@
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     @foreach (config('app.languages') as $key => $lang)
-                                        <div class="tab-pane mt-3 fade @if ($loop->index == 0) show active in @endif"
-                                            id="{{$key}}" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="tab-pane mt-3 fade @if ($loop->index == 0) active in @endif"
+                                            id="{{$lang}}" role="tabpanel" aria-labelledby="home-tab">
                                             <br>
                                             <div class="form-group mt-3 col-md-12">
                                                 <label>{{ __('words.email') }} - {{ $lang }}</label>
@@ -116,8 +116,6 @@
 
 
                             </div>
-
-
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i>
                                     Submit</button>
