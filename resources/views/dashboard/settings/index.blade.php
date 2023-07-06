@@ -1,21 +1,17 @@
 @extends('dashboard.layouts.layout')
 
 @section('body')
-    <!-- Breadcrumb -->
+
     <ol class="breadcrumb">
         <li class="breadcrumb-item">{{__('words.dashboard')}}</li>
         <li class="breadcrumb-item"><a href="#">{{__('words.dashboard')}}</a>
         </li>
         <li class="breadcrumb-item active">داشبرد</li>
-
-       
     </ol>
 
 
-    {{-- {{dd($setting)}} --}}
 
     <div class="container-fluid">
-
         <div class="animated fadeIn">
             <form action="{{Route('settings.store' , $setting)}}" method="post" enctype="multipart/form-data">
                 @csrf
@@ -74,11 +70,11 @@
                             </div>
 
                         </div>
+                    </div>
 
 
 
-
-                        <div class="card">
+                    <div class="card">
                             <div class="card-header">
                                 <strong>{{ __('words.translations') }}</strong>
                             </div>
@@ -131,12 +127,8 @@
                                     Reset</button>
                             </div>
 
-                        </div>
-
-
-                        
-
                     </div>
+
             </form>
         </div>
     </div>
