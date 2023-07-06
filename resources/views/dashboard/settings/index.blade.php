@@ -97,7 +97,7 @@
                                 <div class="tab-content" id="myTabContent">
                                     @foreach (config('app.languages') as $key => $lang)
                                         <div class="tab-pane mt-3 fade @if ($loop->index == 0) show active in @endif"
-                                            id="{{ $key }}" role="tabpanel" aria-labelledby="home-tab">
+                                            id="{{$key}}" role="tabpanel" aria-labelledby="home-tab">
                                             <br>
                                             <div class="form-group mt-3 col-md-12">
                                                 <label>{{ __('words.email') }} - {{ $lang }}</label>
@@ -109,7 +109,6 @@
                                                 <label>{{ __('words.content') }}</label>
                                                 <textarea name="{{$key}}[content]" class="form-control" cols="30" rows="10"></textarea>
                                             </div>
-
 
                                             <div class="form-group col-md-12">
                                                 <label>{{ __('words.address') }}</label>
