@@ -10,6 +10,6 @@ class SettingTranslation extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $fillable = ['setting_id', 'locale', 'title', 'content', 'address'];
+    protected $fillable = ['id','setting_id', 'locale', 'title', 'content', 'address'];
 
 }
