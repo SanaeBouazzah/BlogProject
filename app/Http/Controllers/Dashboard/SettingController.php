@@ -17,9 +17,8 @@ class SettingController extends Controller
     }
     public function store(Request $request)
     {
-      // Setting::create($request->all());
-      // return redirect()->route('dashboard.index');
-      dd($request->all());
+      Setting::create($request->all());
+      return redirect()->route('dashboard.index');
     }
     public function show(string $id)
     {

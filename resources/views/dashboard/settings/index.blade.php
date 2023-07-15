@@ -94,9 +94,9 @@
                                             id="{{$lang}}" role="tabpanel" aria-labelledby="home-tab">
                                             <br>
                                             <div class="form-group mt-3 col-md-12">
-                                                <label>{{ __('words.email') }} - {{ $lang }}</label>
+                                                <label>{{ __('words.tirle') }} - {{ $lang }}</label>
                                                 <input type="text" name="{{$key}}[title]" class="form-control"
-                                                    placeholder="{{ __('words.email') }}"   >
+                                                    placeholder="{{ __('words.title') }}"   >
                                             </div>
 
                                             <div class="form-group col-md-12">
