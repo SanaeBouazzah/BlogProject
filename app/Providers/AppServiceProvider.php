@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $settings = Setting::checkSettings();
         View()->share([
-          'setting' => $settings,
-        ]);
+          'setting'=>$settings,
+      ]);
     }
 }
